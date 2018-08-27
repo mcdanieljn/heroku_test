@@ -12,7 +12,7 @@ User.destroy_all
 
 3.times do
 	team = Team.create(
-		name: Faker::Team.name,
+		name: Faker::Team.name.capitalize,
 		sport: Faker::Team.sport,
 		)
 	5.times do
